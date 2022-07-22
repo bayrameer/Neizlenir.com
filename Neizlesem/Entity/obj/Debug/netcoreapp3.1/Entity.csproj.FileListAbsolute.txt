@@ -1,0 +1,13 @@
+D:\Projem\Neizlesem\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+D:\Projem\Neizlesem\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+D:\Projem\Neizlesem\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+D:\Projem\Neizlesem\Entity\bin\Debug\netcoreapp3.1\Core.dll
+D:\Projem\Neizlesem\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.AssemblyReference.cache
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+D:\Projem\Neizlesem\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

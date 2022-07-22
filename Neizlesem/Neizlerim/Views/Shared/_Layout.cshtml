@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Neİzlenir?</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.png">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/twitter-bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/animate.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <link rel="stylesheet" href="~/css/odometer.css">
+    <link rel="stylesheet" href="~/css/aos.css">
+    <link rel="stylesheet" href="~/css/slick.css">
+    <link rel="stylesheet" href="~/css/default.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+</head>
+@await Component.InvokeAsync("Header")
+
+@RenderBody()
+<body>
+
+    <div>
+        <!-- main-area-end -->
+        <!-- footer-area -->
+        <footer>
+            <div class="footer-top-wrap">
+                <div class="container">
+                    <div class="footer-menu-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="footer-logo">
+                                    <a asp-controller="Home" asp-action="Index"><img src="~/img/logo/logo.png" height="40"  alt =""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="footer-menu">
+                                    <nav>
+                                        <ul class="navigation">
+                                            <li><a asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
+                                            <li><a asp-controller="Films" asp-action="Index1">Filmler</a></li>
+                                        </ul>
+                                        <div class="footer-search">
+                                            <form action="#">
+                                                <input  placeholder="Favori Filmler">
+                                                <button><i class="fas fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-quick-link-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <div class="quick-link-list">
+                                    <ul>
+                                        <li><a href="#">İletişim</a></li>
+                                        <li><a href="#">Yardım</a></li>
+                                        <li><a href="#">Güvenlik</a></li>
+                                        <li><a href="#">Sistem</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2022 Tüm Hakları Saklıdır .By Tasarım<a href="index-2.html"></a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="payment-method-img text-center text-md-right">
+                                <img src="~/img/images/card_img.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+    </div>
+    <script src="~/jquery/jquery.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.odometer.min.js"></script>
+    <script src="~/js/jquery.appear.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/ajax-form.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/aos.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/main.js"></script>
+    @RenderSection("script", false)
+</body>
+</html>

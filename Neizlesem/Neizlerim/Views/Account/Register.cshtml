@@ -1,0 +1,100 @@
+﻿@model RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- External CSS libraries -->
+    <link type="text/css" rel="stylesheet" href="/admin/assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/admin/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/admin/assets/fonts/flaticon/font/flaticon.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="/admin/assets/css/style.css">
+
+</head>
+<body id="top">
+    <div class="page_loader"></div>
+
+    <!-- Login 7 start -->
+    <div class="login-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="form-section">
+                        <div class="logo">
+                            <a>
+                                <img src="/img/logo/logo.png" height="20" alt="logo">
+                            </a>
+                        </div>
+                        <h3>Hemen Üye Ol</h3>
+                        <div class="login-inner-form">
+                            <form asp-action="Register" asp-controller="Account" method="post">
+                                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+                                <div class="form-group clearfix">
+                                    <div class="form-box">
+
+                                        <input name="name" type="text" class="form-control" id="third_field" placeholder="Full Name" asp-for="UserName" aria-label="İsminizi Giriniz:" asp-validation-for="UserName">
+                                        <span class="text-danger" asp-validation-for="UserName"></span>
+
+                                        <i class="flaticon-user"></i>
+
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="form-box">
+                                        <input name="email" type="email" class="form-control" id="first_field" placeholder="Email Address" asp-for="Email" aria-label="Mail Adresi Giriniz:" asp-validation-for="Email">
+                                        <span class="text-danger" asp-validation-for="Email"></span>
+
+                                        <i class="flaticon-mail-2"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="form-box">
+                                        <input name="password" type="password" class="form-control" autocomplete="off" id="second_field" asp-for="Password" placeholder="Şifre Giriniz:" asp-validation-for="Password" aria-label="Password">
+                                        <span class="text-danger" asp-validation-for="Password"></span>
+
+                                        <i class="flaticon-password"></i>
+                                    </div>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-theme">Üye Ol</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <p>Zaten Üye Misiniz?<a asp-controller="Account" asp-action="Login"> Giriş Yap</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login 7 end -->
+    <!-- External JS libraries -->
+    <script src="/admin/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/admin/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin/assets/js/jquery.validate.min.js"></script>
+    <script src="/admin/assets/js/app.js"></script>
+    <script src="/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    @section script{
+        <script src="/jquery-validate/jquery.validate.min.js"></script>
+        <script src="/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    }
+</body>
+
+</html>

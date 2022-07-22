@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Entity.POCO.Film>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<table  class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Puan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YapimYili)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YonetmenId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FilmDetayId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Updated)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Puan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YapimYili)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YonetmenId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FilmDetayId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageUrl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Delete)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Updated)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

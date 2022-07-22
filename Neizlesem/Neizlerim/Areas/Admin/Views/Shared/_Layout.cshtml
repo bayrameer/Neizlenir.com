@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" asp-area="Admin" asp-controller="Film" asp-action="Index">Filmler</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Admin" asp-controller="Film" asp-action="Create">Film Oluştur</a>
+        </li>
+        <li class="nav-item">
+        </li>
+    </ul>
+        <div class="container">
+            @RenderBody()
+        </div>
+   
+        <script src="/jquery/jquery.js"></script>
+        <script src="/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="/jquery-validate/jquery.validate.js"></script>
+        <script src="/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
